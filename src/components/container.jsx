@@ -2,8 +2,10 @@ import user from './user.json';
 import Profile from './user/Profile';
 import Statistics from './Statistics/Statistics';
 import data from './data.json';
-
-
+import FriendList from './FriendList/FriendList';
+import friends from './friends.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from './transactions.json'
 
 export default function Container() {
     return(<div><Profile
@@ -14,6 +16,9 @@ export default function Container() {
   stats={user.stats}
     /> 
 <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
+      
     )
 }
