@@ -1,0 +1,17 @@
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
+}
+.titleTable {
+  background-color: rgb(104, 160, 212);
+  color: aliceblue;
+}
+tr {
+  height: 40px;
+  width: 100px;
+  border: 2px solid rgb(243, 234, 234);
+}
+th {
+  color: darkgrey;
+  border: 2px solid rgb(243, 234, 234);
+}
