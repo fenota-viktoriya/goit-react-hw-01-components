@@ -1,9 +1,15 @@
+body {
+  padding: 20px;
+  border-color: antiquewhite;
+}
+
 .profile {
   width: 250px;
   border: solid 1px #afb3c0;
   box-shadow: 5px 5px 11px -1px rgba(175, 203, 225, 0.39);
   border-radius: 3px;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .description {

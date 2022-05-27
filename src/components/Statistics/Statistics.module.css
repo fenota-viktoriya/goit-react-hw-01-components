@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
   border: solid 1px #afb3c0;
   box-shadow: 5px 5px 11px -1px rgba(175, 203, 225, 0.39);
 }
