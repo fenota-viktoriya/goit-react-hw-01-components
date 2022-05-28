@@ -4,7 +4,9 @@ import s from './FriendList.module.css';
 export default function FriendList({friends}) {
     return (<ul className={`${s.friendList}`}>
        {friends.map(friend=>(<li className={`${s.friendItem}`} key={friend.id}>
-           <span className="status">{friend.isOnline}</span>
+           <span
+            className={`${s.status} ${friend.isOnline ? s.isOnline : s.isOffline}`}
+          ></span>
   <img className="avatar" src={friend.avatar} alt="User avatar" width="48" />
            <p className="name">{friend.name}</p>
 </li>))} 
