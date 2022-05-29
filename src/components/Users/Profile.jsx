@@ -1,50 +1,53 @@
 import PropTypes from 'prop-types';
-import s from './Profile.module.css';
+import {
+  CardProfile,
+  WrapperDescription,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  StatsList,
+  StatsItem,
+  Quantity,
+  Label,
+} from './Profile.styled';
 
-export default function Profile({username, tag, location, avatar, stats }) {
-    return (<div className={`${s.profile}`}>
-  <div className={`${s.description}`}>
-    <img
-      src={avatar}
-      alt="User avatar"
-      className={`${s.avatar}`}
-    />
-            <p className={`${s.name}`}>{username}</p>
-            <p className={`${s.tag}`}>@{tag}</p>
-            <p className={`${s.location}`}>{location}</p>
-  </div>
+export default function Profile({ username, tag, location, avatar, stats }) {
+  return (
+    <CardProfile>
+      <WrapperDescription>
+        <Avatar src={avatar} alt="User avatar" />
+        <Name>{username}</Name>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </WrapperDescription>
 
-  <ul className={`${s.stats}`}>
-    <li className={`${s.statsItem}`}>
-      <span className={`${s.label}`}>Followers</span>
-                <span className={`${s.quantity}`}>{stats.followers}</span>
-    </li>
-    <li className={`${s.statsItem}`}>
-      <span className={`${s.label}`}>Views</span>
-                <span className={`${s.quantity}`}>{stats.views}</span>
-    </li>
-    <li className={`${s.statsItem}`}>
-      <span className={`${s.label}`}>Likes</span>
-                <span className={`${s.quantity}`}>{stats.likes}</span>
-    </li>
-  </ul>
-</div>)
-};
+      <StatsList>
+        <StatsItem>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </StatsItem>
+      </StatsList>
+    </CardProfile>
+  );
+}
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired ,
+  tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  avatar:  PropTypes.string.isRequired,
-  stats: PropTypes.shape({   
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    
-  }), 
-
-   
-}
-
-
-
+    likes: PropTypes.number.isRequired,
+  }),
+};
