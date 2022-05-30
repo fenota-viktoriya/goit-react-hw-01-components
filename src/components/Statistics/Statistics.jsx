@@ -9,7 +9,7 @@ import {
 export default function Statistics({ title, stats, fn }) {
   return (
     <StatisticsSection>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id} style={{ backgroundColor: `${fn()}` }}>
