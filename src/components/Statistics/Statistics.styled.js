@@ -2,9 +2,7 @@ import styled from '@emotion/styled';
 import { theme } from 'Styles';
 
 export const StatisticsSection = styled.section`
-  padding-top: 35px;
   width: 350px;
-  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,6 +14,7 @@ export const StatisticsSection = styled.section`
 `;
 
 export const Title = styled.h2`
+  padding-top: 35px;
   font-size: 20px;
   text-transform: uppercase;
   color: ${theme.colors.darkGray};
