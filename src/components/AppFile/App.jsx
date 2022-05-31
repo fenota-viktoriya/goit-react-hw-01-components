@@ -4,7 +4,7 @@ import FriendList from '../FriendList/FriendList';
 import friends from 'Data/friends.json';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import transactions from 'Data/transactions.json';
-import getRandomColor from 'Helpers/getColor';
+import getRandomColor from 'helpers/getColor';
 import { Container } from './App.styled';
 import Profile from '../Users/Profile';
 import user from 'Data/user.json';

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'Styles';
+import { theme } from 'styles';
 
 export const CardProfile = styled.div`
   width: 250px;
