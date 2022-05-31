@@ -1,13 +1,13 @@
 import Statistics from '../Statistics/Statistics';
-import data from 'data/data.json';
+import data from '../../data/data.json';
 import FriendList from '../FriendList/FriendList';
-import friends from 'data/friends.json';
+import friends from '../../data/friends.json';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
-import transactions from 'data/transactions.json';
+import transactions from '../../data/transactions.json';
 import getRandomColor from 'helpers/getColor';
 import { Container } from './App.styled';
 import Profile from '../Users/Profile';
-import user from 'data/user.json';
+import user from '../../data/user.json';
 export const App = () => {
   return (
     <Container>
