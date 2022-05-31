@@ -8,6 +8,7 @@ import getRandomColor from 'helpers/getColor';
 import { Container } from './App.styled';
 import Profile from '../Users/Profile';
 import user from 'data/user.json';
+
 export const App = () => {
   return (
     <Container>
