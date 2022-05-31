@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'styles-file';
+import { theme } from 'styles';
 
 export const FriendsList = styled.ul`
   margin: 0;

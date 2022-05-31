@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'styles-file';
+import { theme } from 'styles';
 
 export const TransactionHistoryTable = styled.table`
   width: 100%;
