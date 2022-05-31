@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { theme } from 'styles';
+import { theme } from 'styles-file';
 
 export const StatisticsSection = styled.section`
   width: 350px;
